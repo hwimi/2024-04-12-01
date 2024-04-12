@@ -1,0 +1,20 @@
+package repository;
+
+import domain.BoardVO;
+
+public class BoardDAOImpl implements BoardDAO {
+	
+	
+private static final Logger log=
+	
+	
+	
+	
+	
+	@Override
+	public int insert(BoardVO bvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

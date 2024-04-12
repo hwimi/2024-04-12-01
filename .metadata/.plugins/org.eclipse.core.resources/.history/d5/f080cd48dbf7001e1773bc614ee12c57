@@ -1,0 +1,9 @@
+package domain;
+
+public class BoardVO {
+private int bno;
+private String title;
+	
+	
+	
+}
