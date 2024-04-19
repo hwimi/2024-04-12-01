@@ -1,0 +1,27 @@
+console.log("board_detail.js.in");
+console.log(bnoVal);
+
+document.getElementById('cmtAddBtn').addEventListener('click',()=>{
+    const cmtText=document.getElementById('cmtText').value;
+    const cmtWriter=document.getElementById('cmtWriter').value;
+    if(cmtText==null||cmtWriter==''){
+        alert("댓글을 입력해주세요");
+        return false;
+    }else{
+        //댓글등록
+        let cmtData={
+            bno:bnoVal,
+            writer:cmtWriter,
+            content:cmtText
+        };
+        //댓글 비동기로 전송
+    }
+})
+
+async function postCommentToServer(cmtData){
+    try {
+        //method,heards,body
+    } catch (error) {
+        console.log(error);
+    }
+}

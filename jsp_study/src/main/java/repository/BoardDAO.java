@@ -3,17 +3,24 @@ package repository;
 import java.util.List;
 
 import domain.BoardVO;
+import domain.PagingVO;
 
 public interface BoardDAO {
 
+	
+
 	int insert(BoardVO bvo);
 
-	List<BoardVO> selectList();
+	List<BoardVO> selectList(PagingVO pgvo);
 
-	BoardVO selectone(int bno);
+	BoardVO selectOne(int bno);
 
-	int updateone(BoardVO bvo);
+	int update(BoardVO bvo);
 
-	int deleteone(int bno);
+	int delete(int bno);
+
+	int total(PagingVO pgvo);
+
+	
 
 }

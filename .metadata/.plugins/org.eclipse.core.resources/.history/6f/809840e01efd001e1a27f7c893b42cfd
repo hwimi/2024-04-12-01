@@ -1,0 +1,16 @@
+package domain;
+
+public class CommentVO {
+
+	private int cno;
+	private int bno;
+	private String writer;
+	private String content;
+	private String regdate;
+	
+	public CommentVO() {}
+	//post :bno writer content
+	public CommentVO(int bno,String writer,String content) {
+		
+	}
+}
