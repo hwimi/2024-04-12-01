@@ -8,7 +8,8 @@
 </head>
 <body>
  <h1>Board modify Page</h1>
- <form action="/brd/update" method="post">
+ <form action="/brd/update" method="post" enctype="multipart/form-data">
+ <img alt="" src="/_fileUpload/${bvo.imageFile }">
 	 <table border="1">
 	 	<tr>
 	 		<th>bno</th>
@@ -33,6 +34,11 @@
 	 	<tr>
 	 		<th>content</th>
 	 		<td><textarea rows="10" cols="30" name="content">${bvo.content }</textarea></td>
+	 	</tr>
+	 	<tr>
+	 		<th>imageFile</th>
+	 		<td> <input type="hidden" name="imageFile" value=${bvo.imageFile }></td>
+	 		<td> <input type="file" name="newFile" ></td>
 	 	</tr>
 	 </table>
  <button type="submit">modify</button>

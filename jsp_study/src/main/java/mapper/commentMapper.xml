@@ -17,4 +17,7 @@
   <update id="modify">
   	update comment set content=#{content} where cno=#{cno}
   </update>
+  <delete id="all">
+  delete from comment where bno=#{bno}
+  </delete>
   </mapper>

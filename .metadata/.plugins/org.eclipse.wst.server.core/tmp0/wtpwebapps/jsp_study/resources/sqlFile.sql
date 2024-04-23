@@ -32,3 +32,8 @@ content varchar(1000) not null,
 regdate datetime default now(),
 primary key(cno));
 
+
+--2024-04-22
+ alter table board add imageFile varchar(100);
+ alter table board add readCount int default 0;
+

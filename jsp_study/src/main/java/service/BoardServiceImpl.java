@@ -47,7 +47,10 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public int delete(int bno) {
-		// TODO Auto-generated method stub
+		//게시글을 지우기전에 댓글을 삭제하고 글을 지우기
+		CommentServiceImpl csv=new CommentServiceImpl();
+		int isOK=csv.removeAll(bno);
+		log.info("comment remove all>>{}",isOK);
 		return bdao.delete(bno);
 	}
 
@@ -55,6 +58,18 @@ public class BoardServiceImpl implements BoardService {
 	public int getTotal(PagingVO pgvo) {
 		log.info(" getTotal service in!!!");
 		return bdao.total(pgvo);
+	}
+
+	@Override
+	public String getFilName(int bno) {
+		log.info(" getFilName service in!!!");
+		return bdao.getFilName(bno);
+	}
+
+	@Override
+	public int readCount(int bno) {
+		log.info("readCount service in!!!");
+		return bdao.readCount(bno);
 	}
 
 

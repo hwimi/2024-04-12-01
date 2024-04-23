@@ -21,6 +21,10 @@ public interface BoardDAO {
 
 	int total(PagingVO pgvo);
 
+	String getFilName(int bno);
+
+	int readCount(int bno);
+
 	
 
 }

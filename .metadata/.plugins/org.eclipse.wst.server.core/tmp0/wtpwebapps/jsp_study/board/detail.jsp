@@ -9,6 +9,7 @@
 </head>
 <body>
  <h1>Board detail Page</h1>
+<img alt="" src="/_fileUpload/${bvo.imageFile }">
  
  <table border="1">
  	<tr>

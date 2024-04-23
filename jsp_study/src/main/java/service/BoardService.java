@@ -19,6 +19,10 @@ public interface BoardService {
 
 	int getTotal(PagingVO pgvo);
 
+	String getFilName(int bno);
+
+	int readCount(int bno);
+
 	
 
 }

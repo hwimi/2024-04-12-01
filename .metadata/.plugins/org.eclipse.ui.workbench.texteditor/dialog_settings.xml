@@ -6,30 +6,30 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="comm"/>
 		<list key="findhistory">
-			<item value="cnt"/>
-			<item value="count"/>
-			<item value="search"/>
-			<item value="»"/>
-			<item value="star"/>
-			<item value="start"/>
+			<item value="comment"/>
+			<item value="comm"/>
+			<item value="com"/>
+			<item value="csv"/>
+			<item value="old"/>
+			<item value="odl"/>
+			<item value="filename"/>
+			<item value="file"/>
+			<item value="fie"/>
+			<item value="fielname"/>
+			<item value="bsv"/>
+			<item value="bvo"/>
+			<item value="delete"/>
 			<item value="cmt"/>
-			<item value="upda"/>
-			<item value="mod"/>
-			<item value="post"/>
-			<item value="del"/>
-			<item value="댓글출"/>
-			<item value="댓글"/>
-			<item value="list"/>
-			<item value="ce();"/>
+			<item value="cnt"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="88"/>
-		<item key="DIALOG_Y_ORIGIN" value="143"/>
+		<item key="DIALOG_X_ORIGIN" value="763"/>
+		<item key="DIALOG_Y_ORIGIN" value="88"/>
 		<item key="DIALOG_WIDTH" value="340"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

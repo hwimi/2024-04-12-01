@@ -8,11 +8,14 @@
 </head>
 <body>
 <h1>Board Register Page</h1>
+<!--enctype="multipart/form-data":이미지 파이릉ㄹ 가져갈때 사용하는 타입  -->
+<!-- 파일:종류 종류/확장자 image/jpg image/png -->
 
-<form action="/brd/insert" method="post">
+<form action="/brd/insert" method="post" enctype="multipart/form-data">
 	title : <input type="text" name="title"> <br>
 	writer : <input type="text" name="writer" value="${ses.id }" readonly="readonly"> <br>
-	content : <textarea rows="10" cols="30" name="content"></textarea> <br>
+	content : <br><textarea rows="10" cols="30" name="content"></textarea> <br>
+	첨부파일 : <input type="file" name="imageFile" accept="image/png, image/jpg .image/gif, image/jpeg"><br>
 	<button type="submit">전송</button>
 </form>
 </body>

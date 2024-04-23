@@ -10,8 +10,8 @@
   
   <!-- 실제 SQL 구문이 들어감. -->
   <insert id="add" parameterType="domain.BoardVO">
-  	insert into board(title, writer, content) 
-  	values(#{title}, #{writer}, #{content})
+  	insert into board(title, writer, content,imageFile) 
+  	values(#{title}, #{writer}, #{content},#{imageFile})
   </insert>
   <select id="list" resultType="domain.BoardVO">
   	select * from board 
@@ -24,7 +24,7 @@
   </select>
  
 	<update id="up" parameterType="domain.BoardVO">
-		update board set title=#{title}, content=#{content}, moddate=now() 
+		update board set title=#{title}, content=#{content}, moddate=now(),imageFile=#{imageFile}
 		where bno = #{bno}
 	</update>
 	<delete id="del" parameterType="int"> <!-- 들어가는거 -->
@@ -34,6 +34,12 @@
 	select count(bno) from board
 	<include refid="search"></include>
 	</select>
+	<select id="getFilName" resultType="String">
+	select imageFile from board where bno=#{bno}
+	</select>
+	<update id="count">
+	update board set readCount=readCount+1 where bno=#{bno}
+	</update>
 	
 	<sql id="search">
 	 <if test="type!=null">

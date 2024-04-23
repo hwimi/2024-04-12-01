@@ -70,6 +70,22 @@ public class BoardDAOImpl implements BoardDAO {
 		return sql.selectOne("BoardMapper.total",pgvo);
 	}
 
+	@Override
+	public String getFilName(int bno) {
+		log.info("getFilName dao in");
+		return sql.selectOne("BoardMapper.getFilName",bno);
+	}
+
+	@Override
+	public int readCount(int bno) {
+		log.info("readCount dao in");
+	int isOk=sql.update("BoardMapper.count",bno);	
+	if(isOk>0) {
+		sql.commit();
+	}
+		return isOk;
+	}
+
 
 
 }
